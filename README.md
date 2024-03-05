@@ -1,12 +1,10 @@
 ## ReactToolTip
-[My widget description]
-
+This is simple nice tooltip for mendix you can change the color, position from same widget no need to write code
 ## Features
 [feature highlights]
 
 ## Usage
-[step by step instructions]
-
+place widget wherever you want, then put the trigger element, finally place content you whant to appear in tooltip
 ## Demo project
 [link to sandbox]
 
