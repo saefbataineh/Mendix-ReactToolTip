@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="mendix.reacttooltip.ReactToolTip"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>React Tooltip</name>
+    <description>My widget description</description>
+    <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAACxAAAAsQHGLUmNAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAApdJREFUSImtlU9IVFEUxn/nvHHeqKQgBhEa1NQiGEp3bQotjQQ1C1q0dNXeTRFFEK1n36Z9tGlRVPZHUyKiTYughZloQpuUtNJx5r17WowzTG+eM1P4wYN7v3fP99173nnnChVY6OtL0dJ21fPkHCr7RKRDVJrFUDBFVQAwM8CcEWK26YLwc7CRn8SYXbLcZP/0dFDSlLL48PnxpqR3V0Sa+FeYkfvxuzSbR+Ry+uXT9wAKsDgyciXpJ+79lziACJrwSrM0ZrMLfUMnAGRuaKitJdW8ioq3swJIczMdExMArGaz2ObmX++DzTxBLl9JLTtfD2sykbxTTxzAz2Twe3uLTyZTvQGVKNWlW3ZRRThTTxxAEonYcZmTKgPATqqI7G/EoB6cWbWpcVTF09bdMMBVG5jQrQJ1898ILMYA2KOI6G4YuCCIo9t3STzc6QSqZjFfpw6iIZH6r8RaAmchnlTXXQSFxUWsUCgKLi2VeReEuEIYGyPIunwdu7CmnrY1snOvsxPMCFdWgOJJ8usbO6UHkDeKc98aEQfQlha0tVjVBhR+5WqIg2Gf1OBdI+J+Tw97s1n2ZrP4x45T+JXDBfGpKe/f7K2Kn7xucb9hdLHvl8eBA1eILctKrLY2cV8AlkdGb0uy6WbN5UmfVH8/Fjh+Pn6Ci3TTCBzGaHrq2eNyh/o6PHrL4JqophDADOcMQkdYCGrmOoLviI2nX04+goobDWB+YKBdnHcJ4SSOAyZ0A12AH6cEbAHLhi2DLCnMmIYP0i9erJUWxPXYv/Dl9NlThkyxfftVwKnp6YNTT17Xiq/bKg69mpwxJBvlDcnWE2/IAMB8uYHwoYL66Llc7aLYRt0UlTA/OHiEUB8C4Lmx9PPnc43E/QENfgDIPoLSbAAAAABJRU5ErkJggg==
+    </icon>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Tooltip">
+                <property key="triggerMode" type="enumeration" defaultValue="hover">
+                    <caption>Trigger mode</caption>
+                    <description>How to trigger the tooltip</description>
+                    <enumerationValues>
+                        <enumerationValue key="hover">Hover</enumerationValue>
+                    </enumerationValues>
+                </property>
+
+                <property key="offsetDistance" type="integer" defaultValue="0">
+                    <caption>Offset distance (pixels)</caption>
+                    <description>Place the popover content closer or farther away from the popover trigger</description>
+                </property>
+
+                <property key="placement" type="enumeration" defaultValue="top">
+                    <caption>Placement</caption>
+                    <description>How to place the tooltip relative to the tooltip trigger container</description>
+                    <enumerationValues>
+                        <enumerationValue key="top">Top</enumerationValue>
+                        <enumerationValue key="bottom">Bottom</enumerationValue>
+                        <enumerationValue key="right">Right</enumerationValue>
+                        <enumerationValue key="left">Left</enumerationValue>
+                    </enumerationValues>
+                </property>
+
+                <property key="tooltipTriggerContent" type="widgets" required="true">
+                    <caption>Place tooltip trigger content here. This will trigger the tooltip visibility.</caption>
+                    <description />
+                </property>
+
+                <property key="tooltipContent" type="widgets" required="true">
+                    <caption>Place tooltip content here. This will be visible inside the tooltip.</caption>
+                    <description />
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+
+        <propertyGroup caption="Customization">
+            <propertyGroup caption="Advance Design">
+                <property key="backgroundColor" type="string" defaultValue="#000">
+                    <caption>background color</caption>
+                    <description>tooltip background</description>
+                </property>
+                <property key="color" type="string" defaultValue="#fff">
+                    <caption>Text color</caption>
+                    <description>tooltip text color</description>
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+    </properties>
+</widget>
